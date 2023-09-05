@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do app - AceleraZG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="task-insertion">
+        
+        <div class="no-desc-container">
+
+            <div class="nome-task">
+                <label for="nome-task"> <i class="fas fa-tasks"></i>__Nome da task</label><br>
+                <input type="text" name="nome-taks" id="nome-task">
+            </div>
+    
+            <div class="data-task">
+                <label for="data-task"><i class="far fa-calendar-alt"></i>__Data limite</label><br>
+                <input type="datetime-local" name="data-task" id="data-task">
+            </div>
+    
+            <div class="estado-task">
+                <label for="estado"><i class="fas fa-info-circle"></i>__Estado</label><br>
+                <select name="estado-task" id="estado-task">
+                    <option value="todo">todo</option>
+                    <option value="doing">doing</option>
+                    <option value="done">done</option>
+                </select>
+            </div>
+            
+            <div class="prioridade-task">
+                <label for="prioridade-task"><i class="fas fa-exclamation-triangle"></i>__Prioridade</label><br>
+                <select name="prioridade-task" id="prioridade-task">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+    
+            <div class="categoria-task">
+                <label for="categoria-task"><i class="fas fa-tags"></i>__Categoria</label><br>
+                <select name="categoria-task" id="categoria-task">
+                    <option value="trabalho">trabalho</option>
+                    <option value="saude">saude</option>
+                    <option value="familia">familia</option>
+                    <option value="casa">casa</option>
+                    <option value="compras">compras</option>
+                    <option value="educacao">educacao</option>
+                </select>
+            </div>
+
+
+        </div>
+        
+
+        <div class="description-task">
+            <label for="description-task">Desrcrição:</label><br>
+            <div class="description-button">
+                <textarea name="description-task" id="description-task" cols="30" rows="2"></textarea>
+                <button type="button" id="add-task">ADD</button>
+                <button type="button" id="edit-task" >EDIT</button>
+                <button type="button" id="delete-task" >DEL</button>
+                <button type="button" id="save-task" >SAVE</button>
+                <button type="button" id="load-task" >LOAD</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="task-container">
+
+        <div class="todo-container">
+
+            <div class="title-task-content">
+                To do 📝
+            </div>
+
+            <div class="content todo" id="content-todo">
+
+
+            </div>
+            
+        </div>
+
+        <div class="doing-container">
+
+            <div class="title-task-content">
+                Doing 🏃
+            </div>
+
+            <div class="content doing" id="content-doing">
+
+                
+
+            </div>
+            
+        </div>
+
+        <div class="done-container">
+
+            <div class="title-task-content">
+                Done 🏆
+            </div>
+
+            <div class="content done" id="content-done">
+
+
+            </div>
+            
+        </div>
+        
+
+    </div>
+    
+    <script  type="module" src="taskManager.js"></script>
+    <script type="module" src="task.js"></script>
+    <script type="module" src="googleSheetsDataBase.js"></script>
+    <script type="module" src="saveAndLoad.js"></script>
+</body>
+</html>
