@@ -1,4 +1,5 @@
 # Todo app JavaScript/HTML/CSS
+[Link no github pages](https://victorcalebeifg.github.io/toDoApp.JavaScript.HTML.CSS/)
 
 #### Funcionalidades:
 - Add task.
@@ -12,5 +13,5 @@ Foi criado uma API usando o "app script" (ferramenta do google para criar apis c
 
 ### Resultado visual final:
 
-[Link no github pages](https://victorcalebeifg.github.io/toDoApp.JavaScript.HTML.CSS/)
+
 <img width="960" alt="image" src="https://github.com/VictorCalebeIFG/toDoApp-JavaScript-HTML-CSS/assets/84258178/7cb1da69-d6d2-4c29-84b2-e11964ef70c6">
